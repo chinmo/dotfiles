@@ -1,0 +1,41 @@
+# .zshrc の履歴設定部分
+
+# 保存先
+HISTFILE=~/.zsh_history
+
+# ヒストリの最大イベント数
+HISTSIZE=10000
+
+# 保存可能なヒストリのイベント数
+SAVEHIST=10000
+
+# 入力したコマンドラインが直前のものと同一ならヒストリに追加する
+setopt hist_ignore_dups
+
+# history, fc -l はヒストリリストに追加しない
+setopt hist_no_store
+
+# ヒストリ展開を利用する場合、即実行しない
+setopt hist_verify
+
+# ヒストリリストを共有する
+setopt share_history
+
+# 余分な空白を詰める
+setopt hist_reduce_blanks
+
+# ヒストリは即 HISTFILE に追加される
+setopt inc_append_history
+
+# コマンド途中まで打ってから Ctrl+P/N で履歴検索
+autoload history-search-end
+zle -N history-beginning-search-backward-end history-search-end
+zle -N history-beginning-search-forward-end history-search-end
+bindkey "^P" history-beginning-search-backward-end
+bindkey "^N" history-beginning-search-forward-end
+
+# glob(*) によるインクリメンタルサーチ
+bindkey "^R" history-incremental-pattern-search-backward
+bindkey "^S" history-incremental-pattern-search-forward # 動きませーんどして？
+
+
