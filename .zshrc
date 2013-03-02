@@ -126,6 +126,7 @@ fi
 
 alias la="ls -a"
 alias ll="ls -hl"
+alias lla="ls -ahl"
 
 
 
