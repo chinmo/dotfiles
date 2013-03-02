@@ -59,7 +59,7 @@ case ${UID} in
     setopt re_match_pcre
 
     autoload -Uz add-zsh-hook # フック関数の制御を可能に
-    autoload -Uz vcs_info # VCSの様々な除法を取得
+    autoload -Uz vcs_info # VCSの様々な情報を取得
 
     zstyle ':vcs_info:*' enable git svn # 扱うVCSを限定
 
