@@ -1,10 +1,10 @@
 " 環境毎の特殊な設定(gitで管理しない)
-if filereadable($HOME . ".vimrc.local")
+if filereadable($HOME . "/.vimrc.local")
   source ~/.vimrc.local
 endif
 
 " プラグイン関連の設定
-if filereadable($HOME . ".vimrc.plugins")
+if filereadable($HOME . "/.vimrc.plugins")
   source ~/.vimrc.plugins
 endif
 
