@@ -142,4 +142,3 @@ alias lla="ls -ahl"
 [ -f .zshrc.completion ] && source .zshrc.completion
 
 
-
