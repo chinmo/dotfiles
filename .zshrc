@@ -116,6 +116,10 @@ if [ -f ~/.dircolors ]; then
   fi
 fi
 
+# java
+
+## MacのJavaはデフォルトがShift-JISだったので、UTF-8にする
+export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF-8
 
 # -------------------------------------------------------
 # alias
@@ -127,9 +131,6 @@ fi
 alias la="ls -a"
 alias ll="ls -hl"
 alias lla="ls -ahl"
-
-
-
 
 # -------------------------------------------------------
 # History
