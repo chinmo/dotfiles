@@ -24,6 +24,9 @@ NeoBundle 'Shougo/vimproc', {
       \    },
       \ }
 
+" Solarized
+NeoBundle 'altercation/vim-colors-solarized'
+
 " リポジトリを持たないプラグインを放り込む所
 NeoBundleLocal ~/.vim/bundle_manual
 

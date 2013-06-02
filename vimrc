@@ -146,4 +146,6 @@ inoremap <tab> <c-r>=InsertTabWrapper()<cr>
 let g:rubycomplete_buffer_loading = 1
 let g:rubycomplete_classes_in_global = 1
 
+" powerline
+set rtp+=/usr/local/lib/python2.7/site-packages/powerline/bindings/vim
 
