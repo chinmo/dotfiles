@@ -6,7 +6,7 @@ limit coredumpsize 0
 typeset -U path
 
 # path
-path=(/usr/local/bin(N-/) $path)
+path=($HOME/bin(N-/) /usr/local/bin(N-/) $path)
 
 # locale 
 export LANG=ja_JP.UTF-8
