@@ -4,8 +4,6 @@
 setopt prompt_subst
 
 # Powerline
-## python のパス（MacOS）
-path=(/usr/local/share/python(N-/) $path)
 
 ## Powerline (MacOS)
 source /usr/local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
